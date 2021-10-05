@@ -1,0 +1,167 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: monospace;
+}
+
+.contenedor {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 10px;
+}
+
+.listad-noticias {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+@media screen and (min-width: 768px) {
+  .contenedor {
+    width: 70vw;
+    margin: 0 15%;
+  }
+
+  .menu, .newsletter, .footer {
+    width: 70vw;
+  }
+
+  .contenido {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-gap: 20px;
+    width: 70vw;
+  }
+
+  .contenido__listadoNoticias_noticia-cuerpo {
+    width: 100%;
+  }
+  .contenido__listadoNoticias_noticia-cuerpo img {
+    height: 30em;
+  }
+
+  .aside__noticiasDestacadas-item {
+    width: 100%;
+  }
+  .aside__noticiasDestacadas-item img {
+    height: 26em;
+  }
+
+  .contenido__listadoNoticiass {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+  }
+}
+.contenido {
+  margin: 5px;
+}
+
+.contenido__listadoNoticias_noticia-cuerpo {
+  width: 100%;
+}
+.contenido__listadoNoticias_noticia-cuerpo img {
+  width: 100%;
+  height: 20em;
+}
+
+.contenido__listadoNoticias_noticia-cuerpo p {
+  padding: 5px 10px;
+}
+
+.aside__cabeceraListado {
+  border-bottom: 1px solid gray;
+}
+
+.tags {
+  border-bottom: 1px solid gray;
+}
+
+.tags ul {
+  padding: 0;
+  list-style: none;
+}
+
+.tags ul li {
+  padding: 2px 4px;
+  background-color: steelblue;
+  margin-right: 1px;
+  color: white;
+}
+
+.aside__noticiasDestacadas {
+  margin-bottom: 50px;
+}
+
+.aside__noticiasDestacadas-item {
+  width: 100%;
+}
+.aside__noticiasDestacadas-item img {
+  width: 100%;
+  height: 20em;
+}
+
+.footer {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.menu {
+  padding: 10px;
+  border-bottom: 1px solid gray;
+}
+
+.menu__logo {
+  font-size: 24px;
+  font-weight: bold;
+  text-transform: uppercase;
+  display: inline;
+}
+
+.menu__nav {
+  display: inline-block;
+  text-align: right;
+}
+.menu__nav ul {
+  list-style: none;
+}
+.menu__nav ul li {
+  display: inline;
+}
+
+.menu__nav_ul li a {
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.menu__nav_ul-input {
+  border-radius: 30px;
+}
+
+.newsletter {
+  padding: 20px 50px;
+  background-color: #f2f4f5;
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.newsletter h2 {
+  font-size: 24px;
+}
+
+.group input,
+.group button {
+  display: inline-block;
+  border-width: 0;
+  font-size: 13px;
+  padding: 5px 10px;
+}
+
+.group button {
+  background-color: coral;
+  color: white;
+}
+
+/*# sourceMappingURL=style.css.map */
